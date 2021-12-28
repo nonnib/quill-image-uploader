@@ -104,6 +104,12 @@ class ImageUploader {
                         }, 0);
                     }
                 }
+                else
+                {
+                    // change from Nonni: Only allow paste of images if there is nothing else in the clipboard
+                    // fix for chrome issue when copy&pasting from chrome
+                    return;
+                }
             }
         }
     }
